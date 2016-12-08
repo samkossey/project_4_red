@@ -12,7 +12,7 @@ string signedInUser;
 
 
 
-void promptUser(){
+void promptUser(void){
     start:
     cout << "Type 's' for Sign-In or 'r' for Register New User: " << endl;
     cin >> choice;
@@ -30,7 +30,7 @@ static int callback(void *NotUsed, int argc, char **argv, char **azColName){
     return 0;
 }
 
-void registerUser(){
+void registerUser(void){
     regStart:
     string username;
     string password;
@@ -91,7 +91,7 @@ void registerUser(){
     
 }
 
-void signIn() {
+void signIn(void) {
     signStart:
     string username;
     string password;
@@ -136,7 +136,7 @@ void signIn() {
     
 }
 
-void showMessages() {
+void showMessages(void) {
     
     char *zErrMsg = 0;
     int rc;
@@ -191,7 +191,7 @@ void showMessages() {
 }
 
 
-void readMessage() {
+void readMessage(void) {
     char *zErrMsg = 0;
     int rc;
     char str1[1000];
@@ -252,7 +252,7 @@ void readMessage() {
     
 }
 
-void writeMessage() {
+void writeMessage(void) {
     char *zErrMsg = 0;
     int rc;
     char str1[1000];
@@ -334,7 +334,7 @@ void writeMessage() {
     
 }
 
-int main(){
+int main(void){
     
     char *zErrMsg = 0;
     int rc;

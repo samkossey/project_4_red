@@ -58,7 +58,7 @@ void SHA256::transform(const unsigned char *message, unsigned int block_nb)
     }
 }
  
-void SHA256::init()
+void SHA256::init(void)
 {
     m_h[0] = 0x6a09e667;
     m_h[1] = 0xbb67ae85;
